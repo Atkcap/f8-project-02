@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -7,12 +11,14 @@ body {
     --hover-color: #ffb900;
     --line-clamp: 3;
     font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
 }
 
 /* Common */
 
 .content {
     width: 1170px;
+    max-width: calc(100% - 48px);
     margin: 0 auto;
 }
 
@@ -39,8 +45,6 @@ a {
 
 .btn {
     color: #fff;
-    font-family: "Poppins";
-    font-style: normal;
     font-weight: 600;
     padding: 11px 41px;
     line-height: 1.75;
@@ -74,19 +78,13 @@ a {
 }
 
 .header .nav li a {
-    margin-left: 42px;
+    padding: 8px 21px;
     color: #5f5b53;
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.75;
 }
 
 /* Hover con thieu gach chan chu */
 .header .nav li a:hover {
     color: #171100;
-    font-family: "Poppins";
-    font-style: normal;
     font-weight: 600;
 }
 
@@ -133,7 +131,6 @@ a {
     color: #171100;
     font-family: "Sen";
     font-size: 5.8rem;
-    font-style: normal;
     font-weight: 700;
     line-height: 1.17;
     letter-spacing: -0.116rem;
@@ -142,10 +139,7 @@ a {
 .hero .hero-text .desc {
     margin: 22px 0 38px;
     color: #5f5b53;
-    font-family: "Poppins";
     font-size: 1.8rem;
-    font-style: normal;
-    font-weight: 400;
     line-height: 1.67;
 }
 
@@ -171,19 +165,14 @@ a {
 .hero .link-video span {
     margin-left: 14px;
     color: #171100;
-    font-family: Poppins;
     font-size: 1.8rem;
-    font-style: normal;
     font-weight: 600;
 }
 
 .hero .hero-text .info {
     margin: 48px 0 8px;
     color: #5f5b53;
-    font-family: Poppins;
     font-size: 1.8rem;
-    font-style: normal;
-    font-weight: 400;
     line-height: 1.67;
 }
 
@@ -200,16 +189,13 @@ a {
     color: #171100;
     font-family: Sen;
     font-size: 4.4rem;
-    font-style: normal;
     font-weight: 700;
 }
 
 .hero .value .sub-number {
     color: #5f5b53;
-    font-family: Poppins;
+
     font-size: 1.8rem;
-    font-style: normal;
-    font-weight: 400;
 }
 
 .hero .card {
@@ -238,18 +224,15 @@ a {
 
 .hero .card .text .sub-title {
     color: #5f5b53;
-    font-family: Poppins;
+
     font-size: 1.4rem;
-    font-style: normal;
-    font-weight: 400;
     line-height: 1.86;
 }
 
 .hero .card .text .title {
     color: #171100;
-    font-family: Poppins;
+
     font-size: 1.8rem;
-    font-style: normal;
     font-weight: 600;
     line-height: 1.67;
 }
@@ -269,7 +252,6 @@ a {
     color: #171100;
     font-family: Sen;
     font-size: 3.8rem;
-    font-style: normal;
     font-weight: 700;
     line-height: 1.26;
     letter-spacing: -0.076rem;
@@ -278,10 +260,8 @@ a {
 .courses .text .desc {
     margin-top: 16px;
     color: #5f5b53;
-    font-family: Poppins;
+
     font-size: 1.8rem;
-    font-style: normal;
-    font-weight: 400;
     line-height: 1.67;
 }
 
@@ -331,9 +311,8 @@ a {
 .courses .design-desc .title,
 .courses .design-desc .price {
     color: #171100;
-    font-family: Poppins;
+
     font-size: 1.8rem;
-    font-style: normal;
     font-weight: 600;
 }
 
@@ -341,10 +320,8 @@ a {
     margin-top: 6px;
     margin-bottom: 12px;
     color: #5f5b53;
-    font-family: Poppins;
+
     font-size: 1.4rem;
-    font-style: normal;
-    font-weight: 400;
     line-height: 1.86;
 }
 
@@ -356,9 +333,6 @@ a {
 .courses .design-desc .rating span {
     margin-left: 6px;
     color: #fea31b;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 400;
 }
 
 .courses .design-desc .btn {
@@ -389,7 +363,6 @@ a {
     color: #f7f7f7;
     font-family: Sen;
     font-size: 2.4rem;
-    font-style: normal;
     font-weight: 700;
     line-height: 1.42;
 }
@@ -397,10 +370,8 @@ a {
 .testimonial .designer-info .desc {
     margin-top: 4px;
     color: #bfbcb2;
-    font-family: Poppins;
+
     font-size: 1.4rem;
-    font-style: normal;
-    font-weight: 400;
     line-height: 1.86;
 }
 
@@ -421,7 +392,7 @@ a {
 
 .testimonial .famous-quote p {
     color: #fff;
-    font-family: Poppins;
+
     font-size: 2.6rem;
     font-style: italic;
     font-weight: 400;
@@ -478,7 +449,6 @@ a {
     color: #171100;
     font-family: Sen;
     font-size: 3.8rem;
-    font-style: normal;
     font-weight: 700;
     line-height: 1.26;
     letter-spacing: -0.076rem;
@@ -488,9 +458,7 @@ a {
 .features .text-2 p {
     margin: 8px 0;
     color: #5f5b53;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 400;
+
     line-height: 1.75;
 }
 
@@ -530,7 +498,6 @@ a {
     text-align: center;
     font-family: Sen;
     font-size: 3.8rem;
-    font-style: normal;
     font-weight: 700;
     line-height: 1.26;
     letter-spacing: -0.076rem;
@@ -541,9 +508,7 @@ a {
     width: 448px;
     color: #696262;
     text-align: center;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 400;
+
     line-height: 1.75;
 }
 
@@ -575,10 +540,8 @@ a {
 
 .our-blog .blog .date-blog .date {
     color: #5f5b53;
-    font-family: Poppins;
+
     font-size: 1.4rem;
-    font-style: normal;
-    font-weight: 400;
 }
 
 .our-blog .sub-blog .horizontal-line {
@@ -593,8 +556,7 @@ a {
 .our-blog .sub-blog .blog-desc {
     margin-bottom: 12px;
     color: #171100;
-    font-family: Poppins;
-    font-style: normal;
+
     font-weight: 600;
     line-height: 1.75;
 }
@@ -628,10 +590,8 @@ a {
     margin: 18px 0;
     width: 267px;
     color: #bfbcb2;
-    font-family: Poppins;
+
     font-size: 1.4rem;
-    font-style: normal;
-    font-weight: 400;
     line-height: 1.86;
 }
 
@@ -651,8 +611,7 @@ a {
 
 .footer .column .title {
     color: #fff;
-    font-family: Poppins;
-    font-style: normal;
+
     font-weight: 600;
     line-height: 1.75;
 }
@@ -667,9 +626,8 @@ a {
 
 .footer .column .list li {
     color: #fff;
-    font-family: Poppins;
+
     font-size: 1.4rem;
-    font-style: normal;
     font-weight: 600;
     line-height: 1.86;
 }
@@ -683,10 +641,8 @@ a {
 .footer .column .list .sub {
     margin-top: 12px;
     color: #bfbcb2;
-    font-family: Poppins;
+
     font-size: 1.4rem;
-    font-style: normal;
-    font-weight: 400;
     line-height: 1.86;
 }
 
@@ -694,9 +650,7 @@ a {
     padding: 28px 0;
     color: #807d74;
     text-align: center;
-    font-family: Poppins;
+
     font-size: 1.4rem;
-    font-style: normal;
-    font-weight: 400;
     line-height: 1.86;
 }
