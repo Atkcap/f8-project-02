@@ -66,6 +66,9 @@ a {
 .header {
     padding-top: 36px;
     background: #fffcf4;
+    position: sticky;
+    top: -36px;
+    z-index: 1;
 }
 
 .header .navbar {
@@ -78,18 +81,31 @@ a {
 }
 
 .header .nav li a {
+    position: relative;
     padding: 8px 21px;
     color: #5f5b53;
+    line-height: 1.75;
 }
 
-/* Hover con thieu gach chan chu */
+.header .nav li.active a::after {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    display: block;
+    width: 12px;
+    height: 2px;
+    border-radius: 1px;
+    background: #171100;
+}
+
+.header .nav li.active a,
 .header .nav li a:hover {
     color: #171100;
-    font-weight: 600;
+    text-shadow: 1px 0px 0px currentColor;
 }
 
 .header .navbar .btn {
-    margin-left: 70px;
+    margin: 8px 0 8px 70px;
     border-radius: 24.5px;
 }
 
