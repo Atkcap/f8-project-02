@@ -64,10 +64,10 @@ a {
 
 /* Header */
 .header {
-    padding-top: 36px;
+    padding-top: 28px;
     background: #fffcf4;
     position: sticky;
-    top: -36px;
+    top: -28px;
     z-index: 1;
 }
 
@@ -105,7 +105,7 @@ a {
 }
 
 .header .navbar .btn {
-    margin: 8px 0 8px 70px;
+    margin: 8px 0 8px 49px;
     border-radius: 24.5px;
 }
 
