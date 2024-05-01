@@ -23,6 +23,7 @@ body {
     width: 1170px;
     max-width: calc(100% - 48px);
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .row {
@@ -97,6 +98,25 @@ a {
 
 .break-all {
     word-break: break-all;
+}
+
+.dots {
+    display: flex;
+    gap: 6px;
+    margin-top: 28px;
+}
+
+.dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #634700;
+    cursor: pointer;
+}
+
+.dot.active {
+    cursor: default;
+    background: var(--hover-color) !important;
 }
 
 /* Header */
@@ -341,6 +361,7 @@ a {
 .courses .design > a {
     width: calc(100% + 2px);
     margin: -1px;
+    vertical-align: bottom;
 }
 
 .courses .design .image {
@@ -393,8 +414,18 @@ a {
 }
 
 .feedback .content {
-    padding-top: 124px;
+    padding-top: 96px;
     padding-bottom: 96px;
+}
+
+.feedback .feedback-list {
+    display: flex;
+    transform: translateX(-100%);
+    transition: all ease 0.3s;
+}
+
+.feedback .feedback-list .feedback-item {
+    flex-shrink: 0;
 }
 
 .feedback .designer-info .avatar {
@@ -432,11 +463,10 @@ a {
 
 .feedback .famous-quote .quotes {
     position: absolute;
-    top: -28px;
-    left: -30px;
 }
 
 .feedback .famous-quote p {
+    padding: 28px 0 0 30px;
     color: #fff;
     font-size: 2.6rem;
     font-style: italic;
@@ -593,6 +623,15 @@ a {
 
 .our-blog .sub-blog .btn {
     padding: 12px 21px;
+}
+
+.our-blog .dots {
+    justify-content: center;
+    margin-top: 0;
+}
+
+.our-blog .dot {
+    background: #5f5b53;
 }
 
 /* Footer */
