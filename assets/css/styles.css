@@ -222,6 +222,11 @@ a {
 .hero .hero-text-row .hero-btn {
     font-size: 1.8rem;
     padding: 16.25px 34px;
+    background: var(--hover-color);
+}
+
+.hero .hero-text-row .hero-btn:hover {
+    opacity: 0.7;
 }
 
 .hero .hero-text-row .link-video {
@@ -515,6 +520,11 @@ a {
     min-width: 137px;
     padding: 11px 32px;
     text-align: center;
+    background: var(--hover-color);
+}
+
+.features .features-btn:hover {
+    opacity: 0.7;
 }
 
 .features .row-2 {
@@ -659,7 +669,7 @@ a {
 }
 
 .footer .row .column .desc {
-    margin: 32px 0 18px 0;
+    margin: 32px 0 10px 0;
     width: 267px;
     color: #bfbcb2;
     font-size: 1.4rem;
