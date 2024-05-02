@@ -8,6 +8,11 @@
     --hover-color: #ffb900;
 }
 
+html,
+body {
+    scroll-behavior: smooth;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -300,8 +305,9 @@ a {
 /* Courses */
 .courses .content {
     flex-direction: column;
-    margin-top: 200px;
+    margin-top: 50px;
     margin-bottom: 200px;
+    padding-top: 150px;
 }
 
 .courses .text {
@@ -484,7 +490,7 @@ a {
 /* Features */
 .features .content {
     flex-direction: column;
-    margin-bottom: 200px;
+    margin-bottom: 150px;
 }
 
 .features .row {
@@ -540,6 +546,7 @@ a {
 /* Our blog */
 .our-blog {
     background: #fffcf4;
+    border-top: 50px solid #fff;
 }
 
 .our-blog .content {
